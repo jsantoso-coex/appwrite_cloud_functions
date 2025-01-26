@@ -1,9 +1,10 @@
 import { Client, Users } from 'node-appwrite';
 
-// This Appwrite function will be executed every time your function is triggered
+// second function
 export default async ({ req, res, log, error }) => {
   log(process.env.APPWRITE_FUNCTION_API_ENDPOINT);
   log(process.env.APPWRITE_FUNCTION_PROJECT_ID);
+
   const client = new Client()
     .setEndpoint(process.env.APPWRITE_FUNCTION_API_ENDPOINT)
     .setProject(process.env.APPWRITE_FUNCTION_PROJECT_ID)
